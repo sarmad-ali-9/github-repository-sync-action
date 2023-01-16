@@ -1,15 +1,21 @@
 name: Git Repository Sync
 description: Sync current repository to a remote repository on GitHub, GitLab, AWS CodeCommit, etc.
-author: NetEngine
+author: ZetabotCo
 branding:
   icon: upload-cloud
   color: blue
 inputs:
   ssh_private_key:
     description: SSH private key for ssh connection to the target repository
-    required: false
+    required: true
   target_repo_url:
     description: Target git repository URL
+    required: true
+  destination_branch:
+    description: Destination branch on target repository
+    required: true
+  source_branch:
+    description: Source branch on source repository
     required: true
 runs:
   using: 'docker'
