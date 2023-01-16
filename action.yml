@@ -1,5 +1,5 @@
-name: Git Repository Sync
-description: Sync current repository to a remote repository on GitHub, GitLab, AWS CodeCommit, etc.
+name: GitHub to GitLab Repository Sync
+description: Sync GitHub repository to GitLab
 author: ZetabotCo
 branding:
   icon: upload-cloud
